@@ -1,0 +1,798 @@
+<!-- <script>
+    // 1
+    
+    let a = []
+    let b = []
+    
+    console.warn(a==b)
+    console.warn(a===b)
+</script> -->
+
+<!-- <script>
+    //2 
+    let a =[];
+    let b= a ;
+    console.warn(a==b)
+    console.warn(a===b)
+    
+</script> -->
+
+<!-- <script>
+    // 3
+   let a = [29]
+    let b = [29]
+    console.warn(a[0]==b[0])
+    console.warn(a[0]===b[0])
+
+</script> -->
+
+<!-- 4 -->
+<!-- <script>
+  let z = [1, 2, 3, 4];
+
+  let a = { name: "suneet" };
+  console.warn(...z);
+</script> -->
+
+<!-- 5 -->
+<!-- <script>
+    console.warn(typeof NaN);
+</script> -->
+
+<!-- 6 -->
+<!-- <script>
+    let data = 10- -10;
+    console.warn(data);
+</script> -->
+
+<!-- 7 -->
+<!-- <script>
+    const set = new Set ([1,1,2,2,3,3,4,5,6]);
+    console.log(set);
+
+</script> -->
+<!-- <script>
+    console.log('hello Sandeep')
+    alert('Hello sandeep bhai')
+    document.write('Hello World')
+</script> -->
+
+<!-- <script>
+    let a = 23
+    let b = 34
+    function sum(a, b){
+        return a + b
+    }
+    console.log(sum(23,34))
+</script> -->
+
+<!-- <script>
+    let a = prompt("Please Enter the value of a ", "");
+let b = prompt("please entewr the value of b", "");
+var c = parseInt(a) + parseInt(b);
+console.log("The Sum of "+a+" and " +b+" is :" +c)
+</script> -->
+
+<!-- <script>
+    let a = prompt('Enter a number for square root', '')
+    let b = Math.sqrt(a)
+    console.log(b)
+</script> -->
+
+<!-- <script>
+    let base = prompt('Please enter the base value','')
+    let height = prompt('please enter the height of triangle','')
+    area = 1/2*base*height
+    console.log(' base: ' + base + ' height: ' + height + ' area: ' +area)
+</script> -->
+
+<!-- <script>
+    let a = 10
+    let b = 14
+    let c = 16
+    let s = (a+b+c)/2
+    const area = s*(s-a)*(s-b)*(s-c)
+    const Areaoftriangle = Math.sqrt(area)
+    console.log(Areaoftriangle)
+</script> -->
+<!-- <script>
+    let a = parseInt(prompt('Enter the vale of a',''))
+    let b = parseInt(prompt('Enter the vale of b',''))
+    console.log(`The value of a : ${a}, The value of b :${b}`)
+    a = a + b ;
+    b = a - b;
+    a = a - b ;
+
+    console.log(`After swapping The value of a : ${a}, The value of b :${b}`)
+
+</script> -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>Convert KM IN MILES -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function convert(){
+             var kms = document.getElementById('data').value;
+             const factor = 0.621371;
+             const miles = kms*factor
+             document.getElementById('Result').innerText = `${miles} miles`
+        }
+    </script>
+
+</head>
+<body>
+    <input type ="number" name="" step="any" id="data"/>Kms
+    <button onClick="convert()">Convert</button>Miles
+    <h1 id="Result"></h1>
+    
+</body>
+</html> -->
+
+<!-- Write a program of Convert celsius to fahrenheit -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function conversion(){
+            let celsius = document.getElementById('data').value;
+            let fahrenheit = celsius*1.8 + 32;
+            document.getElementById('value').innerText=`${celsius} Celsius is = ${fahrenheit} Fahrenheit`
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="" step="" id="data"/> Celsius
+    <button onClick="conversion()">Convert</button> Fahrenheit
+    <h3 id="value"></h3>
+    
+</body>
+</html> -->
+
+<!-- Find the number is Positive, Negative or Zero -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function val(){
+            var a = document.getElementById('data').value
+            // let res = Math.sign(a)
+            if(a>0){
+                res=`${a} is positive number`
+            }
+            else if(a<0){
+                res=`${a} is negative number`
+            }
+            else if (a==0){
+                res=`${a} is Zero `
+            }
+            else{
+                res=`${a} is not a number`
+            }
+
+            document.getElementById('res').innerText= res;
+
+        }
+    </script>
+</head>
+<body>
+    <input type="" step="any" name="" id="data" />
+    <button onClick="val()"> Check </button>
+    <h2 id="res"></h2>
+    
+</body>
+</html> -->
+
+
+<!-- Generate a 4 Number OTP function -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = Math.random()
+        console.log("before calculation " +x)
+        y =Math.floor( x *1000000 )
+        console.log("After calculation ", +y)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a program is the number is odd or even and PRIME NUMBER  -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = parseInt(prompt('Plaese enter the value of x : '))
+        // if ( x%2==0){
+        //     let a = `${x} is a Even Number`
+        //     console.log(a)
+        // }
+        // else{
+        //     let b = `${x} is a Odd Number`
+        //     console.log(b)}
+
+        // let res= x%2==0 ? "number is even" : "Number is odd"
+        // console.log(`${x} ${res} `)
+        if ( x==1){
+            console.log(`${x} is neither prime number nor composite number`)
+        }
+        else if(x==2){
+            console.log(`${x} is smallest prime number `)
+
+        }
+        else if (x<1){
+            console.log(`${x} is not a prime number categories`)
+        }else{
+            for(var i = 2; i < x ; i++){
+                if( x%i == 0){
+                    var res = (`${x} is not A prime Number`)
+                    break;
+                }
+                else{
+                    var res = (`${x} is A Prime number`)
+                }
+            }
+            console.log(res)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a programme  to find the  max number aming 3 Values -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(p,q,r){
+            if(p>=q && p>=r){
+                return p;
+            }else if ( q>=p && q>=r){
+                return q;
+            }else{
+                return r;
+            }
+
+
+
+        }
+        let a =parseInt(prompt('Please enter the value of a : '))
+        let b  =parseInt(prompt('Please enter the value of b : '))
+        let c =parseInt(prompt('Please enter the value of c : '))
+
+        let x = check(a,b,c)
+        console.log((`${a},${b},${c} : largest number = ${x}`))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Find a factorial of a number  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = parseInt(prompt("Please enter a number for factorial : "))
+        let fact = 1;
+        if(a==0){
+            console.log(`The factorial of the given ${a} is 1 `)
+        }else if ( a< 0){
+            console.log(`The factorial of the -ve number is not possible `)
+        }else{
+            for(var i = 1 ; i<=a; i++)
+            fact = fact*i;
+            console.log(`The factorial of the given ${a} is ${fact}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Find the factorial of a number using recursion function -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                let a = parseInt(prompt("Please enter a number for factorial : "))
+                var fact = 1;
+                function factr(number){
+                    if(number>a){
+                        return;
+                    }
+                    var temp = fact;
+                    fact = fact * number;
+                    number++;
+                    console.log( temp +" X "+ number + "=" +fact)
+                    factr(number)
+
+                }
+                factr(1)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a function of table 5,10,17 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table (number){
+            for( var i = 1; i <=10; i++){
+                let temp = i*number;
+                console.log(`${number} X ${i} = ${temp}`)
+            }
+            
+
+        }
+        table(5)
+        table(10)
+        table(17)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a Armstrong Number  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let number = prompt('Please enter a Number :')
+        var temp = number;
+        var noOfDigits = number.toString().length
+        alert(noOfDigits)
+         var sum =0;
+         while(temp>0){
+            let digit = temp%10
+            console.log(digit)
+            console.log(digit**3)
+            sum += digit**noOfDigits;
+            console.log("Sum "+sum)
+            temp = parseInt(temp/10)
+            console.log(temp)
+            console.log('-------------')
+         }
+         if(sum ==number){
+            console.log(`${number} is a armstrong number `)
+         }else{
+            console.log(`${number} is not a armstrong number `)
+
+         }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- 'Writye a program for palimdrom string which is e.g 'dad','madam'' -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt('Please Enter the string');
+        let stringArray = string.split('')
+        let stringArrayRev = stringArray.reverse()
+        let revstring = stringArrayRev.join('')
+        if(string === revstring){
+            console.log(`${string} : is a palindrome string`)
+        }else{
+            console.log(`${string} : is not a palindrome string`)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- write a code for palindrome with the help of loop -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("Please enter the string : ")
+        let len = string.length;
+        let msg = 'It is a palindrome string'
+        console.log(len)
+        for(var i = 0; i< len/2; i++){
+            if (string[i] != string[len - 1 - i]){
+                msg = 'It is not a palindrome string'
+            }
+            
+        }
+        console.log(`${string} : ${msg}`)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- write a program to find the occerance of the character in the string -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt('Please enter the string') 
+        let letter = prompt('please enter the character ')
+        let strLen = string.length;
+        var counter = 0;
+        for(var i = 0; i < strLen ; i++){
+           if(string[i] == letter){
+            counter++;
+           }
+        }
+        console.log(`${string} => ${letter } => ${counter}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- write a program of string started and ended with same character -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt('Please enter the string : ')
+        let testStart = string.startsWith('w');
+        let testEnd = string.endsWith("h")
+        console.log(`Start : ${testStart}`)
+        console.log(`End : ${testEnd}`)
+        if(testStart == true && testEnd == true ){
+            console.log(`${string} is started with "w" and end with "h" `)
+        }else if(testStart == true && testEnd == false){
+            console.log(`${string} is started with "w" `)
+
+        }else if ( testStart == false && testEnd == true){
+            console.log(`${string } is end with "h"`)
+        }else{
+            console.log(`${string} neither started with "w" OR end with "h" `)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- check a string contains a substring -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("please enter a string")
+        console.log(string)
+        let subString = "the";
+        let test1 = string.includes(subString)
+        console.log(test1)
+        let test2 = string.indexOf(subString)
+        console.log(test2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- write a program to convert first letter into the Upper case of the string -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("Please enter a Word : ")
+        console.log(string)
+        let first = string.charAt(0)
+        console.log(first)
+        console.log(first.toUpperCase())
+        let rem = string.slice(1)
+        console.log(rem)
+        let caps = first.toUpperCase() + rem ;
+        console.log(`Final Word : ${caps}`)
+     </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a program of find the number of vowel in the string -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("Plerase enter a string : ")
+        const reg = /[aeiou]/gi;
+        let test = string.match(reg)
+        console.log(test.join(' , '))
+        console.log(test.length)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a code or program to find the sum of natural number -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let value = prompt('Please Enter a number : ')
+        function sum(num){
+            if(num>0){
+                return num + sum(num-1)
+            }else{
+                return num 
+            }
+        }
+        sum(20)
+        console.log(sum(20))
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- How we find the factor of a number  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let number = prompt(" Please enter a number : ")
+        for ( var i = 1; i<=number; i++){
+            if( number%i == 0){
+                console.log(i)
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- write a code a to form a simple calculator using switch case  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 =prompt("please enter 1st number :")
+        let num2 =prompt("please enter 2nd number :")
+        let opr = prompt("please select one operator among + , - , x , / ")
+
+        switch(opr)
+        {
+            case "+" :
+                let res1 = parseFloat(num1) + parseFloat(num2)
+                console.log(`${num1} + ${num2} = ${res1}`)
+                break;
+                
+            case "-" :
+                let res2 = parseFloat(num1) -  parseFloat(num2)
+                console.log(`${num1} - ${num2} = ${res2}`)
+                break;
+               
+            case "x" :
+                let res3 = parseFloat(num1) * parseFloat(num2)
+                console.log(`${num1} * ${num2} = ${res3}`)
+                break;
+               
+            case "/" :
+                let res4 = parseFloat(num1) / parseFloat(num2)
+                console.log(`${num1} / ${num2} = ${res4}`)
+                break;
+                default:
+                    console.log("invalid Operator")
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a code for fabonacci series -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=0 , b = 1 ;
+        for( var i = 0 ; i <= 10; i++){
+            var temp = a + b ;
+            a = b;
+            b = temp;
+            console.log(temp)
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a code for change character into string  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt(" Please enter a string : ")
+        console.log(string)
+        var reg =  new RegExp('red', 'gi')
+        let newString = string.replace(reg, 'blue')
+        console.log(newString)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a code for reverse string  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("Please enter a string : ")
+        console.log(string)
+        let strLen = string.length;
+        console.log(string[strLen - 1])
+        let revStr = '';
+        for( var i = strLen-1; i>=0; i--){
+            revStr += string[i]
+        }
+        console.log(`${string} revrse is ${revStr}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- Write a code for sort the Alphbatic  words -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var string = prompt("Please enter a string ")
+        var stringArray = string.split(' ');
+        var arrangedString = stringArray.sort()
+        console.log(string)
+        console.log(stringArray)
+        console.log(stringArray.join(' '))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
